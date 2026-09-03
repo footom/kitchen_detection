@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/ab"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".login">
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape"
+        android:gravity="center"
+        android:text="歡迎使用\n樂活安全監測系統"
+        android:textColor="@color/red"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/pot" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="電話號碼"
+        android:inputType="phone"
+        android:minHeight="60dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <!-- 進入與註冊按鈕組合 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/purple_200"
+            android:onClick="Login"
+            android:text="進入"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/purple_500"
+            android:onClick="Register"
+            android:text="註冊"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            tools:ignore="OnClick" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="本系統針對瓦斯及一氧化碳進行偵測。\n偵測標準瓦斯：180ppm，一氧化碳：150ppm，超過後會發出警訊提醒。"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="220dp"
+        android:layout_height="46dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:textColor="@color/black" />
+</LinearLayout>

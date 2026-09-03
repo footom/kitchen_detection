@@ -1,0 +1,52 @@
+# ==========================================
+# 1.環境變數與敏感資訊
+# ==========================================
+# 包含資料庫密碼與環境變數
+*.env
+!.env.example
+
+# Firebase金鑰與服務帳號密碼檔
+android/app/google-services.json
+backend/*serviceAccount*.json
+backend/serviceAccountKey.json
+
+# ==========================================
+# 2. Node.js後端
+# ==========================================
+backend/node_modules/
+backend/npm-debug.log*
+backend/yarn-debug.log*
+backend/yarn-error.log*
+backend/logs/
+backend/*.log
+
+# ==========================================
+# 3.Android App && Gradle
+# ==========================================
+# Gradle編譯快取與暫存目錄
+android/.gradle/
+android/build/
+android/app/build/
+android/captures/
+
+# 本地環境設定檔 (包含 SDK 路徑)
+android/local.properties
+
+# Android Studio與IDE產出檔
+.idea/
+*.iml
+.DS_Store
+*.swp
+*.bak
+
+# Android簽署與KeyStore檔案
+*.jks
+*.keystore
+
+# ==========================================
+# 4.ESP8266韌體
+# ==========================================
+# Arduino IDE / PlatformIO編譯暫存目錄
+firmware/build/
+firmware/.pio/
+firmware/.vscode/

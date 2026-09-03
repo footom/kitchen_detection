@@ -1,0 +1,17 @@
+{
+  "name": "detection-gas-backend",
+  "version": "1.0.0",
+  "private": true,
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node --watch app.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "firebase-admin": "^13.0.2",
+    "mqtt": "^5.10.3",
+    "mysql2": "^3.12.0"
+  }
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="廚房偵測即時狀況"/>
+    <item
+        android:id="@+id/showbtn"
+        android:title="廚房氣體即時狀況"/>
+    <item
+        android:id="@+id/history"
+        android:title="氣體濃度超標資訊"/>
+    <item
+        android:id="@+id/showhistory"
+        android:title="查詢歷史資訊"/>
+    <item
+        android:id="@+id/gasStandard"
+        android:title="氣體濃度標準"/>
+    <item
+        android:id="@+id/signout"
+        android:title="登出"/>
+</menu>
