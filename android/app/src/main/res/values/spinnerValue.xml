@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinnerValue">
+        <item>請選擇欲查詢時間內資料</item>
+        <item>10天內</item>
+        <item>20天內</item>
+        <item>30天內</item>
+        <item>40天內</item>
+        <item>50天內</item>
+        <item>60天內</item>
+    </string-array>
+</resources>
